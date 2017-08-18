@@ -67,12 +67,23 @@ if i == 2 {
     unChien.japer()
 }
 
+// 16
+let unChien = Chien("Milou")  // pas le même que dans le if ...
 let unAutreChien = Chien(nom: "Boris", type: .méchant)
 
-// 16
+// 17
 print(unAutreChien.quiSuisJe())
+
+// 18
+var unTableauDeChiens = [unChien, unAutreChien]
+unTableauDeChiens.append(Chien(nom: "Mimi", type: .gentil))
+
+for chien in unTableauDeChiens {
+    print(chien.quiSuisJe())
+}
 
 print ("Fin du programme")
 
+// 19 Créer une Classe Chien à part.
 
 
