@@ -57,7 +57,7 @@ let i = arc4random_uniform(3) // entre 0 et 3-1
 //3 print()
 
 //5 break point
-if i == 2 {
+if i != 0 {
     let unChien = Chien("Milou")
     
     //4
@@ -72,12 +72,13 @@ let unChien = Chien("Milou")  // pas le même que dans le if ...
 let unAutreChien = Chien(nom: "Boris", type: .méchant)
 
 // 17
-print(unAutreChien.quiSuisJe())
+print(unAutreChien.quiSuisJe(), "\n\n")
 
 // 18
 var unTableauDeChiens = [unChien, unAutreChien]
 unTableauDeChiens.append(Chien(nom: "Mimi", type: .gentil))
 
+print("Voici la liste des pitous\n--------------------------")
 for chien in unTableauDeChiens {
     print(chien.quiSuisJe())
 }
